@@ -31,24 +31,36 @@
 </head>
 <body>
   <!-- Navigation Menu -->
-  <header>
-    <!-- Placeholder for navigation menu -->
-  </header>
+  <nav>
+    <span class="menu-toggle" id="menu-toggle">☰</span>
+    <ul id="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact Me</a></li>
+    </ul>
+  </nav>
 
   <!-- Fullscreen Slider -->
   <div id="fullscreen-slider">
-    <div class="slide" style="background-image: url('image1.jpg');">
-      <!-- Placeholder for Slide 1 -->
+    <div class="slide active-slide" style="background-image: url('image1.jpg');">
+      <!-- Botón central del slider -->
+      <button class="slider-btn" onclick="location.href='portfolio.html'">View All Gallery</button>
     </div>
-    <div class="slide" style="background-image: url('image2.jpg');">
-      <!-- Placeholder for Slide 2 -->
-    </div>
-    <div class="slide" style="background-image: url('image3.jpg');">
-      <!-- Placeholder for Slide 3 -->
-    </div>
+    <div class="slide" style="background-image: url('image2.jpg');"></div>
+    <div class="slide" style="background-image: url('image3.jpg');"></div>
   </div>
 
-  <!-- Placeholder for the rest of the page content -->
+  <!-- Portfolio Gallery (Ejemplo simplificado, expandir según necesidad) -->
+  <div id="portfolio">
+    <div class="filter">
+      <!-- Placeholder para la funcionalidad de filtro -->
+    </div>
+    <div class="gallery">
+      <!-- Imágenes del portafolio -->
+    </div>
+  </div>
 
   <!-- Include your scripts here -->
   <script src="script.js"></script>

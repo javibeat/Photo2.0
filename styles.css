@@ -51,3 +51,86 @@ nav {
   transform: translate(-50%, -50%);
   /* Estilos del botón */
 }
+
+/* Estilos adicionales para el menú y el botón */
+
+/* Menú de navegación */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  padding: 1rem 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+}
+
+nav .menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* Estilo para el menú responsivo */
+@media (max-width: 768px) {
+  nav ul {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.9);
+    width: 0;
+    overflow: hidden;
+    transition: width 0.3s ease;
+  }
+
+  nav ul.open {
+    width: 50%;
+  }
+
+  nav .menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+/* Botón central */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem 2rem;
+  border: 2px solid white;
+  background: none;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.slider-btn:hover,
+.slider-btn:focus {
+  background: white;
+  color: black;
+}
+
+/* Estilo para el portafolio y filtro (por completar según el layout) */

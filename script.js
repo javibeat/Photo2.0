@@ -11,4 +11,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Cambia el slide cada 5 segundos
   setInterval(changeSlide, 5000);
+
+  // Menú desplegable para la versión móvil
+  const menuToggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+
+  menuToggle.addEventListener('click', function() {
+    menu.classList.toggle('open');
+  });
 });
